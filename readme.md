@@ -50,8 +50,9 @@ Note that this ignores punctuation and spaces.  These could have been considered
 
 I use a mildly modified format of this that removes the numbers and merely preserves the order.  In the "pre" table, if you start with the letter 'a', it is most likely to be preceded by an 'H', then by an 'E', then by an 'R', etc. (I use UPPERCASE and lowercase to distinguish input from output).
 
-<ul>ab</ul>  
 <pre>
+ab  
+--
 HA
 EI
 RO
@@ -65,15 +66,16 @@ LR
 </pRE>
 
 Similarly, in the "post" table, if you start with an 'a', it is most likely FOLLOWED by 'N', then by a 'T', then by an 'L', etc.
-<ul>ab...</ul>  
 <pre>
-NE...
-TL...
-LO...
-RU...
-SY...
-CA...
-DR...
+ab  
+--
+NE
+TL
+LO
+RU
+SY
+CA
+DR
 ..
 ..
 ..

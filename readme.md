@@ -1,22 +1,22 @@
 
-(Way) below is a contact chart composed from <this source|https://gist.github.com/lydell/c439049abac2c9226e53>, which itself was composed from the Google corpus.  The contact chart is an old codebreaker tool that assembles frequencies of bigrams (two letters together).  Consider this sentence fragment:
+(Way) below is a contact chart composed from [this source](https://gist.github.com/lydell/c439049abac2c9226e53), which itself was composed from the Google corpus.  The contact chart is an old codebreaker tool that assembles frequencies of bigrams (two letters together).  Consider this sentence fragment:
 
 Twas brillig and the slithy toves
 
 Here, we can see that 't' is followed by the following letters:
 
-w (once)
-h (twice)
-o (once)
+w (once)  
+h (twice)  
+o (once)  
 
 And was preceded by these letters:
 
-d (once)
-i (once)
-y (once)
+d (once)  
+i (once)  
+y (once)  
 
 I use the following format to document that information:
-
+<pre>
  (the letter that precedes  (the letter that follows
   our letter of interest)    our letter of interest)
 ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -24,10 +24,10 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ
   (quantity of times  (our letter     (quantity of times
    each preceding      of interest)    each following
    letter appeared)                    letter appeared)
-
+</pre>
 
 Assembling this for the other letters in that sentence results in:
-
+<pre>
 ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ
       1               1   A             1    1       
                   1       B                 1        
@@ -45,7 +45,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ
               1           V    1                     
                    1      W1                         
        1                  Y                   1      
-
+</pre>
 Note that this ignores punctuation and spaces.  These could have been considered, resulting in a slightly different table.
 
 
@@ -58,4 +58,6 @@ The data below is constructed from the aforementioned English bigram source and 
 
 So this is not so much production of a new data set as a very minor rearrangement of an existing data set into a familiar data structure - the contact chart.
 
-Special thanks to Helen Gaines (https://en.wikipedia.org/wiki/Helen_Fouch%C3%A9_Gaines), author of Cryptanalysis (archive.org|https://archive.org/details/cryptanalysis00hele, Amazon|https://www.amazon.com/Cryptanalysis-Study-Ciphers-Their-Solution/dp/0486200973)
+Special thanks to:
+* [Helen Gaines](https://en.wikipedia.org/wiki/Helen_Fouch%C3%A9_Gaines), author of Cryptanalysis ([archive.org](https://archive.org/details/cryptanalysis00hele), [Amazon](https://www.amazon.com/Cryptanalysis-Study-Ciphers-Their-Solution/dp/0486200973))
+* [@lydell](https://gist.github.com/lydell)

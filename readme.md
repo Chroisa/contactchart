@@ -1,5 +1,7 @@
 
-(Way) below is a contact chart composed from [this source](https://gist.github.com/lydell/c439049abac2c9226e53), which itself was composed from the Google corpus.  The contact chart is an old codebreaker tool that assembles frequencies of bigrams (two letters together).  Consider this sentence fragment:
+(Way) below is a contact chart composed from [this source](https://gist.github.com/lydell/c439049abac2c9226e53), which itself was composed from the Google corpus.  The contact chart is an old codebreaker tool that assembles frequencies of bigrams (two letters together).
+
+Consider this sentence fragment:
 
 Twas brillig and the slithy toves
 
@@ -82,6 +84,10 @@ DR
 </pre>
 
 For reference, the intermediate tables that show counts from the original dataset are also included (intermedPRE and intermedPOST).  You can see how this is sorted by comparing the first few values in column B (the 'a' column): 79794787 (A), 6479202253 (B) matches with lines 399 ("aa") and 121 ("ab") of bigrams.json.
+
+The contact chart looks like this:
+
+![Contact Chart](/contactchart.png)
 
 The data below is constructed from the aforementioned English bigram source and was remarkably easy to construct:
 
